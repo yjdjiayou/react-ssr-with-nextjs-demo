@@ -1,0 +1,7 @@
+node_modules
+config.js
+.next
+.idea
+dest
+.vscode
+local-code
