@@ -16,6 +16,7 @@ const app = next({dev});
 const handle = app.getRequestHandler();
 
 // 创建 Redis client
+// 如果通过这里连接 Redis 时，就不需要再通过命令行连接 Redis
 const redis = new Redis({
     port: 6379,
     password: 123456

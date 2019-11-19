@@ -141,8 +141,14 @@ function Index({userRepos, userStaredRepos, user, router}) {
 }
 
 Index.getInitialProps = async ({ctx, reduxStore}) => {
+    // 这段代码在服务端运行时会报错，需要对请求区分处理
+    // 因为在客户端运行的时候，浏览器会在 URL 前面加上域名和端口
+    // 最终的 URL => http://localhost:3000/github/search/repositories
+    // 但是在服务端运行的时候，由于服务端是没有域名的，只有 127.0.0.1 ，并且默认端口是 80
+    // 最终的 URL => http://127.0.0.1:80/github/search/repositories ，这个请求会被发送到服务端本地的 80 端口去
+    // 80 端口不是最终想要请求的地址，所以会报错
     // const result = await axios
-    //   .get('/github/search/repositories?q=react')
+    //   .get('/github/search/repositories')
     //   .then(resp => console.log(resp))
 
     const user = reduxStore.getState().user;
@@ -153,21 +159,14 @@ Index.getInitialProps = async ({ctx, reduxStore}) => {
         }
     }
 
-    if (!isServer) {
-        // if (cache.get('userRepos') && cache.get('userStaredRepos')) {
-        //   return {
-        //     userRepos: cache.get('userRepos'),
-        //     userStaredRepos: cache.get('userStaredRepos'),
-        //   }
-        // }
-
+    if (!isServer)
         if (cachedUserRepos && cachedUserStaredRepos) {
             return {
                 userRepos: cachedUserRepos,
                 userStaredRepos: cachedUserStaredRepos,
             }
         }
-    }
+    };
 
     const userRepos = await api.request(
         {
