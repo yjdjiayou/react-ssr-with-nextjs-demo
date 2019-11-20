@@ -1,10 +1,6 @@
 import {useState, useCallback} from 'react';
-import getCofnig from 'next/config';
 import {connect} from 'react-redux';
 import {withRouter} from 'next/router';
-
-import axios from 'axios';
-
 import Link from 'next/link';
 import {
     Button,
@@ -22,8 +18,6 @@ import Container from './Container';
 import {logout} from '../store/store';
 
 const {Header, Content, Footer} = Layout;
-
-const {publicRuntimeConfig} = getCofnig();
 
 const githubIconStyle = {
     color: 'white',
@@ -56,22 +50,6 @@ function MyLayout({children, user, logout, router}) {
     const handleLogout = useCallback(() => {
         logout();
     }, [logout]);
-
-    const handleGotoOAuth = useCallback(e => {
-        e.preventDefault();
-        axios
-            .get(`/prepare-auth?url=${router.asPath}`)
-            .then(resp => {
-                if (resp.status === 200) {
-                    location.href = publicRuntimeConfig.OAUTH_URL;
-                } else {
-                    console.log('prepare auth failed', resp);
-                }
-            })
-            .catch(err => {
-                console.log('prepare auth failed', err);
-            })
-    }, []);
 
     const userDropDown = (
         <Menu>
@@ -125,10 +103,6 @@ function MyLayout({children, user, logout, router}) {
             <Content>
                 <Container>{children}</Container>
             </Content>
-            <Footer style={footerStyle}>
-                Develop by yjd @
-                <a href="mailto:jokcy@hotmail.com">jokcy@hotmail.com</a>
-            </Footer>
             <style jsx>{`
             .content {
               color: red;
