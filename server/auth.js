@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const config = require('../config.sample');
+const config = require('../global.config');
 
 const {client_id, client_secret, request_token_url} = config.github;
 

@@ -22,7 +22,8 @@ const redis = new Redis({
     password: 123456
 });
 
-// 设置 Nodejs 全局增加一个 atob 方法
+// 因为 Node.js 没有 window 对象，所以无法使用 atob
+// 这里通过插件给 Nodejs 全局增加一个 atob 方法
 global.atob = atob;
 
 app.prepare().then(() => {
@@ -34,7 +35,7 @@ app.prepare().then(() => {
     server.use(koaBody());
 
     const SESSION_CONFIG = {
-        key: 'yjd',
+        key: 'qwer',
         // 将 Koa 的 session 存储到 Redis 中
         store: new RedisSessionStore(redis),
     };
@@ -45,17 +46,6 @@ app.prepare().then(() => {
     // 必须放在上面的 session 中间件后面
     auth(server);
     api(server);
-
-    // router.get('/api/user/info', async ctx => {
-    //     const user = ctx.session.userInfo;
-    //     if (!user) {
-    //         ctx.status = 401;
-    //         ctx.body = 'Need Login';
-    //     } else {
-    //         ctx.body = user;
-    //         ctx.set('Content-Type', 'application/json');
-    //     }
-    // });
 
     server.use(router.routes());
 

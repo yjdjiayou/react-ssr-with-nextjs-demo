@@ -17,7 +17,7 @@ class RedisSessionStore {
      * @param sid
      */
     async get(sid) {
-        console.log('get session', sid);
+        // console.log('get session', sid);
         const id = getRedisSessionId(sid);
         // 相当于执行 Redis 的 get 命令
         const data = await this.client.get(id);

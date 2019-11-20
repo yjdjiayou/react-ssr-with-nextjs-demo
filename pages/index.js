@@ -3,16 +3,11 @@ import {Button, Icon, Tabs} from 'antd';
 import getCofnig from 'next/config';
 import {connect} from 'react-redux';
 import Router, {withRouter} from 'next/router';
-import LRU from 'lru-cache';
 
 import Repo from '../components/Repo';
-import {cacheArray} from '../lib/repo-basic-cache';
+import {cacheArray,getCache} from '../lib/repo-basic-cache';
 
 const api = require('../lib/api');
-
-// const cache = new LRU({
-//   maxAge: 1000 * 10,
-// })
 
 const {publicRuntimeConfig} = getCofnig();
 
@@ -21,7 +16,6 @@ let cachedUserRepos, cachedUserStaredRepos;
 const isServer = typeof window === 'undefined';
 
 function Index({userRepos, userStaredRepos, user, router}) {
-    // console.log(userRepos, userStaredRepos)
 
     const tabKey = router.query.key || '1';
 
@@ -31,27 +25,26 @@ function Index({userRepos, userStaredRepos, user, router}) {
 
     useEffect(() => {
         if (!isServer) {
+            // 这里对客户端做的数据缓存不大好，一旦 github 的数用户据发生了变化，除非页面刷新，否则无法同步数据
             cachedUserRepos = userRepos;
             cachedUserStaredRepos = userStaredRepos;
-            // if (userRepos) {
-            //   cache.set('userRepos', userRepos)
-            // }
-            // if (userStaredRepos) {
-            //   cache.set('userStaredRepos', userStaredRepos)
-            // }
-            const timeout = setTimeout(() => {
+
+            // 所以这里使用 setTimeout 实现缓存更新策略
+            setTimeout(() => {
                 cachedUserRepos = null;
                 cachedUserStaredRepos = null;
             }, 1000 * 60 * 10);
+
         }
     }, [userRepos, userStaredRepos]);
 
     useEffect(() => {
         if (!isServer) {
+            // 使用 LRU 缓存数据
             cacheArray(userRepos);
             cacheArray(userStaredRepos);
         }
-    });
+    }, [userRepos, userStaredRepos]);
 
     if (!user || !user.id) {
         return (
@@ -86,9 +79,6 @@ function Index({userRepos, userStaredRepos, user, router}) {
                 </p>
             </div>
             <div className="user-repos">
-                {/* {userRepos.map(repo => (
-          <Repo repo={repo} />
-        ))} */}
                 <Tabs activeKey={tabKey} onChange={handleTabChange} animated={false}>
                     <Tabs.TabPane tab="你的仓库" key="1">
                         {userRepos.map(repo => (
@@ -152,21 +142,20 @@ Index.getInitialProps = async ({ctx, reduxStore}) => {
     //   .then(resp => console.log(resp))
 
     const user = reduxStore.getState().user;
-    console.log(reduxStore);
     if (!user || !user.id) {
         return {
             isLogin: false,
         }
     }
 
-    if (!isServer)
+    if (!isServer) {
         if (cachedUserRepos && cachedUserStaredRepos) {
             return {
                 userRepos: cachedUserRepos,
                 userStaredRepos: cachedUserStaredRepos,
             }
         }
-    };
+    }
 
     const userRepos = await api.request(
         {
