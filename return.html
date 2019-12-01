@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charSet="utf-8" class="next-head"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" class="next-head"/>
+    <link rel="preload" href="/_next/static/development/pages/detail.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/development/pages/_app.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/styles.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/1.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/runtime/webpack.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/runtime/main.js?ts=1575213167783" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/styles.js?ts=1575213167783" as="script"/>
+    <link rel="stylesheet" href="/_next/static/css/styles.chunk.css"/>
+    <style id="__jsx-2348854648">.root.jsx-2348854648 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .other-info.jsx-2348854648 > span.jsx-2348854648 + span.jsx-2348854648 {
+        margin-left: 10px;
+    }
+
+    .root.jsx-2348854648 + .root.jsx-2348854648 {
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+    }
+
+    .repo-title.jsx-2348854648 {
+        font-size: 20px;
+    }
+
+    .lang-star.jsx-2348854648 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .lang-star.jsx-2348854648 > span.jsx-2348854648 {
+        width: 120px;
+        text-align: right;
+    }
+
+    .repo-desc.jsx-2348854648 {
+        width: 400px;
+    }
+
+    /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFxSZWFjdFxcbXktcHJvamVjdFxccmVhY3Qtc3NyLXdpdGgtbmV4dGpzLWRlbW9cXGNvbXBvbmVudHNcXFJlcG8uanN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXFDa0IsQUFHd0IsQUFJSSxBQUdTLEFBSVgsQUFHRixBQUdELEFBSUEsWUFISyxBQUluQixHQVZBLEVBUEEsU0FHbUIsR0FXbkIsY0FWQSwrQkFSZ0MsQUFjaEMsbUhBYkEiLCJmaWxlIjoiRjpcXFJlYWN0XFxteS1wcm9qZWN0XFxyZWFjdC1zc3Itd2l0aC1uZXh0anMtZGVtb1xcY29tcG9uZW50c1xcUmVwby5qc3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXHJcbmltcG9ydCB7IEljb24gfSBmcm9tICdhbnRkJ1xyXG5cclxuaW1wb3J0IHsgZ2V0TGFzdFVwZGF0ZWQgfSBmcm9tICcuLi9saWIvdXRpbHMnXHJcblxyXG5mdW5jdGlvbiBnZXRMaWNlbnNlKGxpY2Vuc2UpIHtcclxuICByZXR1cm4gbGljZW5zZSA/IGAke2xpY2Vuc2Uuc3BkeF9pZH0gbGljZW5zZWAgOiAnJ1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCAoeyByZXBvIH0pID0+IHtcclxuICByZXR1cm4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJyb290XCI+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYmFzaWMtaW5mb1wiPlxyXG4gICAgICAgIDxoMyBjbGFzc05hbWU9XCJyZXBvLXRpdGxlXCI+XHJcbiAgICAgICAgICA8TGluayBocmVmPXtgL2RldGFpbD9vd25lcj0ke3JlcG8ub3duZXIubG9naW59Jm5hbWU9JHtyZXBvLm5hbWV9YH0+XHJcbiAgICAgICAgICAgIDxhPntyZXBvLmZ1bGxfbmFtZX08L2E+XHJcbiAgICAgICAgICA8L0xpbms+XHJcbiAgICAgICAgPC9oMz5cclxuICAgICAgICA8cCBjbGFzc05hbWU9XCJyZXBvLWRlc2NcIj57cmVwby5kZXNjcmlwdGlvbn08L3A+XHJcbiAgICAgICAgPHAgY2xhc3NOYW1lPVwib3RoZXItaW5mb1wiPlxyXG4gICAgICAgICAge3JlcG8ubGljZW5zZSA/IChcclxuICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibGljZW5zZVwiPntnZXRMaWNlbnNlKHJlcG8ubGljZW5zZSl9PC9zcGFuPlxyXG4gICAgICAgICAgKSA6IG51bGx9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJsYXN0LXVwZGF0ZWRcIj5cclxuICAgICAgICAgICAge2dldExhc3RVcGRhdGVkKHJlcG8udXBkYXRlZF9hdCl9XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJvcGVuLWlzc3Vlc1wiPlxyXG4gICAgICAgICAgICB7cmVwby5vcGVuX2lzc3Vlc19jb3VudH0gb3BlbiBpc3N1ZXNcclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICA8L3A+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImxhbmctc3RhclwiPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImxhbmdcIj57cmVwby5sYW5ndWFnZX08L3NwYW4+XHJcbiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwic3RhcnNcIj5cclxuICAgICAgICAgIHtyZXBvLnN0YXJnYXplcnNfY291bnR9IDxJY29uIHR5cGU9XCJzdGFyXCIgdGhlbWU9XCJmaWxsZWRcIiAvPlxyXG4gICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAucm9vdCB7XHJcbiAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgICAgIH1cclxuICAgICAgICAub3RoZXItaW5mbyA+IHNwYW4gKyBzcGFuIHtcclxuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG4gICAgICAgIH1cclxuICAgICAgICAucm9vdCArIC5yb290IHtcclxuICAgICAgICAgIGJvcmRlci10b3A6IDFweCBzb2xpZCAjZWVlO1xyXG4gICAgICAgICAgcGFkZGluZy10b3A6IDIwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5yZXBvLXRpdGxlIHtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICB9XHJcbiAgICAgICAgLmxhbmctc3RhciB7XHJcbiAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgIH1cclxuICAgICAgICAubGFuZy1zdGFyID4gc3BhbiB7XHJcbiAgICAgICAgICB3aWR0aDogMTIwcHg7XHJcbiAgICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgICAgICB9XHJcbiAgICAgICAgLnJlcG8tZGVzYyB7XHJcbiAgICAgICAgICB3aWR0aDogNDAwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8L2Rpdj5cclxuICApXHJcbn1cclxuIl19 */
+    /*@ sourceURL=F:\React\my-project\react-ssr-with-nextjs-demo\components\Repo.jsx */</style>
+    <style id="__jsx-22533730">.root.jsx-22533730 {
+        padding-top: 20px;
+    }
+
+    .repo-basic.jsx-22533730 {
+        padding: 20px;
+        border: 1px solid #eee;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .tab.jsx-22533730 + .tab.jsx-22533730 {
+        margin-left: 20px;
+    }
+
+    /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFxSZWFjdFxcbXktcHJvamVjdFxccmVhY3Qtc3NyLXdpdGgtbmV4dGpzLWRlbW9cXGNvbXBvbmVudHNcXHdpdGgtcmVwby1iYXNpYy5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBd0RxQixBQUcwQyxBQUdKLEFBTUksYUFMSyxJQUh4QixBQVNBLGtCQUxxQixtQkFDRCxrQkFDcEIiLCJmaWxlIjoiRjpcXFJlYWN0XFxteS1wcm9qZWN0XFxyZWFjdC1zc3Itd2l0aC1uZXh0anMtZGVtb1xcY29tcG9uZW50c1xcd2l0aC1yZXBvLWJhc2ljLmpzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7dXNlRWZmZWN0fSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSZXBvIGZyb20gJy4vUmVwbyc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7d2l0aFJvdXRlcn0gZnJvbSAnbmV4dC9yb3V0ZXInO1xyXG5cclxuaW1wb3J0IGFwaSBmcm9tICcuLi9saWIvYXBpJztcclxuaW1wb3J0IHtnZXRDYWNoZSwgY2FjaGV9IGZyb20gJy4uL2xpYi9yZXBvLWJhc2ljLWNhY2hlJztcclxuXHJcbmNvbnN0IGlzU2VydmVyID0gdHlwZW9mIHdpbmRvdyA9PT0gJ3VuZGVmaW5lZCc7XHJcblxyXG5mdW5jdGlvbiBtYWtlUXVlcnkocXVlcnlPYmplY3QpIHtcclxuICAgIGNvbnN0IHF1ZXJ5ID0gT2JqZWN0LmVudHJpZXMocXVlcnlPYmplY3QpXHJcbiAgICAgICAgLnJlZHVjZSgocmVzdWx0LCBlbnRyeSkgPT4ge1xyXG4gICAgICAgICAgICByZXN1bHQucHVzaChlbnRyeS5qb2luKCc9JykpO1xyXG4gICAgICAgICAgICByZXR1cm4gcmVzdWx0XHJcbiAgICAgICAgfSwgW10pXHJcbiAgICAgICAgLmpvaW4oJyYnKTtcclxuICAgIHJldHVybiBgPyR7cXVlcnl9YFxyXG59XHJcblxyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gKENvbXAsIHR5cGUgPSAnaW5kZXgnKSB7XHJcbiAgICBmdW5jdGlvbiBXaXRoRGV0YWlsKHtyZXBvQmFzaWMsIHJvdXRlciwgLi4ucmVzdH0pIHtcclxuICAgICAgICBjb25zdCBxdWVyeSA9IG1ha2VRdWVyeShyb3V0ZXIucXVlcnkpO1xyXG5cclxuICAgICAgICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgICAgICAgICBpZiAoIWlzU2VydmVyKSB7XHJcbiAgICAgICAgICAgICAgICBjYWNoZShyZXBvQmFzaWMpXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9LFtyZXBvQmFzaWNdKTtcclxuXHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb290XCI+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlcG8tYmFzaWNcIj5cclxuICAgICAgICAgICAgICAgICAgICA8UmVwbyByZXBvPXtyZXBvQmFzaWN9Lz5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRhYnNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAge3R5cGUgPT09ICdpbmRleCcgPyAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0YWJcIj5SZWFkbWU8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICkgOiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL2RldGFpbCR7cXVlcnl9YH0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3NOYW1lPVwidGFiIGluZGV4XCI+UmVhZG1lPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICB7dHlwZSA9PT0gJ2lzc3VlcycgPyAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0YWJcIj5Jc3N1ZXM8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICkgOiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL2RldGFpbC9pc3N1ZXMke3F1ZXJ5fWB9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cInRhYiBpc3N1ZXNcIj5Jc3N1ZXM8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgPENvbXAgey4uLnJlc3R9IC8+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxzdHlsZSBqc3g+XHJcbiAgICAgICAgICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgICAgICAgIC5yb290IHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgICAucmVwby1iYXNpYyB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNlZWU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAgIC50YWIgKyAudGFiIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgYH1cclxuICAgICAgICAgICAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIClcclxuICAgIH1cclxuXHJcbiAgICBXaXRoRGV0YWlsLmdldEluaXRpYWxQcm9wcyA9IGFzeW5jIGNvbnRleHQgPT4ge1xyXG4gICAgICAgIGNvbnN0IHtyb3V0ZXIsIGN0eH0gPSBjb250ZXh0O1xyXG4gICAgICAgIGNvbnN0IHtvd25lciwgbmFtZX0gPSBjdHgucXVlcnk7XHJcblxyXG4gICAgICAgIGNvbnN0IGZ1bGxfbmFtZSA9IGAke293bmVyfS8ke25hbWV9YDtcclxuXHJcbiAgICAgICAgbGV0IHBhZ2VEYXRhID0ge307XHJcbiAgICAgICAgLy8gSE9DIOmcgOimgeaJp+ihjOS8oOmAkui/m+adpeeahOe7hOS7tueahCBnZXRJbml0aWFsUHJvcHNcclxuICAgICAgICBpZiAoQ29tcC5nZXRJbml0aWFsUHJvcHMpIHtcclxuICAgICAgICAgICAgcGFnZURhdGEgPSBhd2FpdCBDb21wLmdldEluaXRpYWxQcm9wcyhjb250ZXh0KTtcclxuICAgICAgICB9XHJcbiAgICAgICAgaWYgKGdldENhY2hlKGZ1bGxfbmFtZSkpIHtcclxuICAgICAgICAgICAgcmV0dXJuIHtcclxuICAgICAgICAgICAgICAgIHJlcG9CYXNpYzogZ2V0Q2FjaGUoZnVsbF9uYW1lKSxcclxuICAgICAgICAgICAgICAgIC4uLnBhZ2VEYXRhLFxyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGNvbnN0IHJlcG9CYXNpYyA9IGF3YWl0IGFwaS5yZXF1ZXN0KFxyXG4gICAgICAgICAgICB7XHJcbiAgICAgICAgICAgICAgICB1cmw6IGAvcmVwb3MvJHtvd25lcn0vJHtuYW1lfWAsXHJcbiAgICAgICAgICAgIH0sXHJcbiAgICAgICAgICAgIGN0eC5yZXEsXHJcbiAgICAgICAgICAgIGN0eC5yZXMsXHJcbiAgICAgICAgKTtcclxuXHJcbiAgICAgICAgcmV0dXJuIHtcclxuICAgICAgICAgICAgcmVwb0Jhc2ljOiByZXBvQmFzaWMuZGF0YSxcclxuICAgICAgICAgICAgLi4ucGFnZURhdGEsXHJcbiAgICAgICAgfVxyXG4gICAgfTtcclxuXHJcbiAgICByZXR1cm4gd2l0aFJvdXRlcihXaXRoRGV0YWlsKTtcclxufVxyXG4iXX0= */
+    /*@ sourceURL=F:\React\my-project\react-ssr-with-nextjs-demo\components\with-repo-basic.jsx */</style>
+    <style id="__jsx-798986749">.content.jsx-267262163 {
+        color: red;
+    }
+
+    .header-inner.jsx-267262163 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .header-left.jsx-267262163 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFxSZWFjdFxcbXktcHJvamVjdFxccmVhY3Qtc3NyLXdpdGgtbmV4dGpzLWRlbW9cXGNvbXBvbmVudHNcXExheW91dC5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUd3QixBQUd5QixBQUdHLEFBSUEsVUFOZixnRUFHZ0MsQUFJSCx5R0FDN0IsVUFKQSIsImZpbGUiOiJGOlxcUmVhY3RcXG15LXByb2plY3RcXHJlYWN0LXNzci13aXRoLW5leHRqcy1kZW1vXFxjb21wb25lbnRzXFxMYXlvdXQuanN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHt1c2VTdGF0ZSwgdXNlQ2FsbGJhY2t9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHtjb25uZWN0fSBmcm9tICdyZWFjdC1yZWR1eCc7XHJcbmltcG9ydCB7d2l0aFJvdXRlcn0gZnJvbSAnbmV4dC9yb3V0ZXInO1xyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xyXG5pbXBvcnQge1xyXG4gICAgQnV0dG9uLFxyXG4gICAgTGF5b3V0LFxyXG4gICAgSWNvbixcclxuICAgIElucHV0LFxyXG4gICAgQXZhdGFyLFxyXG4gICAgVG9vbHRpcCxcclxuICAgIERyb3Bkb3duLFxyXG4gICAgTWVudSxcclxufSBmcm9tICdhbnRkJztcclxuXHJcbmltcG9ydCBDb250YWluZXIgZnJvbSAnLi9Db250YWluZXInO1xyXG5cclxuaW1wb3J0IHtsb2dvdXR9IGZyb20gJy4uL3N0b3JlL3N0b3JlJztcclxuXHJcbmNvbnN0IHtIZWFkZXIsIENvbnRlbnQsIEZvb3Rlcn0gPSBMYXlvdXQ7XHJcblxyXG5jb25zdCBnaXRodWJJY29uU3R5bGUgPSB7XHJcbiAgICBjb2xvcjogJ3doaXRlJyxcclxuICAgIGZvbnRTaXplOiA0MCxcclxuICAgIGRpc3BsYXk6ICdibG9jaycsXHJcbiAgICBwYWRkaW5nVG9wOiAxMCxcclxuICAgIG1hcmdpblJpZ2h0OiAyMCxcclxufTtcclxuXHJcbmNvbnN0IGZvb3RlclN0eWxlID0ge1xyXG4gICAgdGV4dEFsaWduOiAnY2VudGVyJyxcclxufTtcclxuXHJcbmZ1bmN0aW9uIE15TGF5b3V0KHtjaGlsZHJlbiwgdXNlciwgbG9nb3V0LCByb3V0ZXJ9KSB7XHJcbiAgICBjb25zdCB1cmxRdWVyeSA9IHJvdXRlci5xdWVyeSAmJiByb3V0ZXIucXVlcnkucXVlcnk7XHJcblxyXG4gICAgY29uc3QgW3NlYXJjaCwgc2V0U2VhcmNoXSA9IHVzZVN0YXRlKHVybFF1ZXJ5IHx8ICcnKTtcclxuXHJcbiAgICBjb25zdCBoYW5kbGVTZWFyY2hDaGFuZ2UgPSB1c2VDYWxsYmFjayhcclxuICAgICAgICBldmVudCA9PiB7XHJcbiAgICAgICAgICAgIHNldFNlYXJjaChldmVudC50YXJnZXQudmFsdWUpO1xyXG4gICAgICAgIH0sXHJcbiAgICAgICAgW3NldFNlYXJjaF0sXHJcbiAgICApO1xyXG5cclxuICAgIGNvbnN0IGhhbmRsZU9uU2VhcmNoID0gdXNlQ2FsbGJhY2soKCkgPT4ge1xyXG4gICAgICAgIHJvdXRlci5wdXNoKGAvc2VhcmNoP3F1ZXJ5PSR7c2VhcmNofWApO1xyXG4gICAgfSwgW3NlYXJjaF0pO1xyXG5cclxuICAgIGNvbnN0IGhhbmRsZUxvZ291dCA9IHVzZUNhbGxiYWNrKCgpID0+IHtcclxuICAgICAgICBsb2dvdXQoKTtcclxuICAgIH0sIFtsb2dvdXRdKTtcclxuXHJcbiAgICBjb25zdCB1c2VyRHJvcERvd24gPSAoXHJcbiAgICAgICAgPE1lbnU+XHJcbiAgICAgICAgICAgIDxNZW51Lkl0ZW0+XHJcbiAgICAgICAgICAgICAgICA8YSBocmVmPVwiamF2YXNjcmlwdDp2b2lkKDApXCIgb25DbGljaz17aGFuZGxlTG9nb3V0fT5cclxuICAgICAgICAgICAgICAgICAgICDnmbsg5Ye6XHJcbiAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgIDwvTWVudS5JdGVtPlxyXG4gICAgICAgIDwvTWVudT5cclxuICAgICk7XHJcblxyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8TGF5b3V0PlxyXG4gICAgICAgICAgICA8SGVhZGVyPlxyXG4gICAgICAgICAgICAgICAgPENvbnRhaW5lciByZW5kZXJlcj17PGRpdiBjbGFzc05hbWU9XCJoZWFkZXItaW5uZXJcIi8+fT5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1sZWZ0XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibG9nb1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8SWNvbiB0eXBlPVwiZ2l0aHViXCIgc3R5bGU9e2dpdGh1Ykljb25TdHlsZX0vPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxJbnB1dC5TZWFyY2hcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj1cIuaQnOe0ouS7k+W6k1wiXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e3NlYXJjaH1cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17aGFuZGxlU2VhcmNoQ2hhbmdlfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uU2VhcmNoPXtoYW5kbGVPblNlYXJjaH1cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXJpZ2h0XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidXNlclwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge3VzZXIgJiYgdXNlci5pZCA/IChcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8RHJvcGRvd24gb3ZlcmxheT17dXNlckRyb3BEb3dufT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cIi9cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxBdmF0YXIgc2l6ZT17NDB9IHNyYz17dXNlci5hdmF0YXJfdXJsfS8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L0Ryb3Bkb3duPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKSA6IChcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VG9vbHRpcCB0aXRsZT1cIueCueWHu+i/m+ihjOeZu+W9lVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7Lyog54K55Ye7IGEg5qCH562+77yM5rWP6KeI5Zmo5Lya5ZCR5pyN5Yqh5Zmo5Y+R6LW36K+35rGCKi99XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9e2AvcHJlcGFyZS1hdXRoP3VybD0ke3JvdXRlci5hc1BhdGh9YH0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8QXZhdGFyIHNpemU9ezQwfSBpY29uPVwidXNlclwiLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvVG9vbHRpcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICl9XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgICAgICAgIDwvSGVhZGVyPlxyXG4gICAgICAgICAgICA8Q29udGVudD5cclxuICAgICAgICAgICAgICAgIDxDb250YWluZXI+e2NoaWxkcmVufTwvQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8L0NvbnRlbnQ+XHJcbiAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgLmNvbnRlbnQge1xyXG4gICAgICAgICAgICAgIGNvbG9yOiByZWQ7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmhlYWRlci1pbm5lciB7XHJcbiAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmhlYWRlci1sZWZ0IHtcclxuICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgICAgICAjX19uZXh0IHtcclxuICAgICAgICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmFudC1sYXlvdXQge1xyXG4gICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDEwMCU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmFudC1sYXlvdXQtaGVhZGVyIHtcclxuICAgICAgICAgICAgICBwYWRkaW5nLWxlZnQ6IDA7XHJcbiAgICAgICAgICAgICAgcGFkZGluZy1yaWdodDogMDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAuYW50LWxheW91dC1jb250ZW50IHtcclxuICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiAjZmZmO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICBgfTwvc3R5bGU+XHJcbiAgICAgICAgPC9MYXlvdXQ+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QoXHJcbiAgICBmdW5jdGlvbiBtYXBTdGF0ZShzdGF0ZSkge1xyXG4gICAgICAgIHJldHVybiB7XHJcbiAgICAgICAgICAgIHVzZXI6IHN0YXRlLnVzZXIsXHJcbiAgICAgICAgfVxyXG4gICAgfSxcclxuICAgIGZ1bmN0aW9uIG1hcFJlZHVjZXIoZGlzcGF0Y2gpIHtcclxuICAgICAgICByZXR1cm4ge1xyXG4gICAgICAgICAgICBsb2dvdXQ6ICgpID0+IGRpc3BhdGNoKGxvZ291dCgpKSxcclxuICAgICAgICB9XHJcbiAgICB9LFxyXG4pKHdpdGhSb3V0ZXIoTXlMYXlvdXQpKVxyXG4iXX0= */
+    /*@ sourceURL=F:\React\my-project\react-ssr-with-nextjs-demo\components\Layout.jsx */</style>
+    <style id="__jsx-1909283687">#__next {
+        height: 100%;
+    }
+
+    .ant-layout {
+        min-height: 100%;
+    }
+
+    .ant-layout-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ant-layout-content {
+        background: #fff;
+    }
+
+    /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFxSZWFjdFxcbXktcHJvamVjdFxccmVhY3Qtc3NyLXdpdGgtbmV4dGpzLWRlbW9cXGNvbXBvbmVudHNcXExheW91dC5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0grQixBQUcyQixBQUdJLEFBR0QsQUFJQyxZQVRsQixHQU1rQixDQUhsQixBQU9BLGVBSEEiLCJmaWxlIjoiRjpcXFJlYWN0XFxteS1wcm9qZWN0XFxyZWFjdC1zc3Itd2l0aC1uZXh0anMtZGVtb1xcY29tcG9uZW50c1xcTGF5b3V0LmpzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7dXNlU3RhdGUsIHVzZUNhbGxiYWNrfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7Y29ubmVjdH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge3dpdGhSb3V0ZXJ9IGZyb20gJ25leHQvcm91dGVyJztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcclxuaW1wb3J0IHtcclxuICAgIEJ1dHRvbixcclxuICAgIExheW91dCxcclxuICAgIEljb24sXHJcbiAgICBJbnB1dCxcclxuICAgIEF2YXRhcixcclxuICAgIFRvb2x0aXAsXHJcbiAgICBEcm9wZG93bixcclxuICAgIE1lbnUsXHJcbn0gZnJvbSAnYW50ZCc7XHJcblxyXG5pbXBvcnQgQ29udGFpbmVyIGZyb20gJy4vQ29udGFpbmVyJztcclxuXHJcbmltcG9ydCB7bG9nb3V0fSBmcm9tICcuLi9zdG9yZS9zdG9yZSc7XHJcblxyXG5jb25zdCB7SGVhZGVyLCBDb250ZW50LCBGb290ZXJ9ID0gTGF5b3V0O1xyXG5cclxuY29uc3QgZ2l0aHViSWNvblN0eWxlID0ge1xyXG4gICAgY29sb3I6ICd3aGl0ZScsXHJcbiAgICBmb250U2l6ZTogNDAsXHJcbiAgICBkaXNwbGF5OiAnYmxvY2snLFxyXG4gICAgcGFkZGluZ1RvcDogMTAsXHJcbiAgICBtYXJnaW5SaWdodDogMjAsXHJcbn07XHJcblxyXG5jb25zdCBmb290ZXJTdHlsZSA9IHtcclxuICAgIHRleHRBbGlnbjogJ2NlbnRlcicsXHJcbn07XHJcblxyXG5mdW5jdGlvbiBNeUxheW91dCh7Y2hpbGRyZW4sIHVzZXIsIGxvZ291dCwgcm91dGVyfSkge1xyXG4gICAgY29uc3QgdXJsUXVlcnkgPSByb3V0ZXIucXVlcnkgJiYgcm91dGVyLnF1ZXJ5LnF1ZXJ5O1xyXG5cclxuICAgIGNvbnN0IFtzZWFyY2gsIHNldFNlYXJjaF0gPSB1c2VTdGF0ZSh1cmxRdWVyeSB8fCAnJyk7XHJcblxyXG4gICAgY29uc3QgaGFuZGxlU2VhcmNoQ2hhbmdlID0gdXNlQ2FsbGJhY2soXHJcbiAgICAgICAgZXZlbnQgPT4ge1xyXG4gICAgICAgICAgICBzZXRTZWFyY2goZXZlbnQudGFyZ2V0LnZhbHVlKTtcclxuICAgICAgICB9LFxyXG4gICAgICAgIFtzZXRTZWFyY2hdLFxyXG4gICAgKTtcclxuXHJcbiAgICBjb25zdCBoYW5kbGVPblNlYXJjaCA9IHVzZUNhbGxiYWNrKCgpID0+IHtcclxuICAgICAgICByb3V0ZXIucHVzaChgL3NlYXJjaD9xdWVyeT0ke3NlYXJjaH1gKTtcclxuICAgIH0sIFtzZWFyY2hdKTtcclxuXHJcbiAgICBjb25zdCBoYW5kbGVMb2dvdXQgPSB1c2VDYWxsYmFjaygoKSA9PiB7XHJcbiAgICAgICAgbG9nb3V0KCk7XHJcbiAgICB9LCBbbG9nb3V0XSk7XHJcblxyXG4gICAgY29uc3QgdXNlckRyb3BEb3duID0gKFxyXG4gICAgICAgIDxNZW51PlxyXG4gICAgICAgICAgICA8TWVudS5JdGVtPlxyXG4gICAgICAgICAgICAgICAgPGEgaHJlZj1cImphdmFzY3JpcHQ6dm9pZCgwKVwiIG9uQ2xpY2s9e2hhbmRsZUxvZ291dH0+XHJcbiAgICAgICAgICAgICAgICAgICAg55m7IOWHulxyXG4gICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICA8L01lbnUuSXRlbT5cclxuICAgICAgICA8L01lbnU+XHJcbiAgICApO1xyXG5cclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPExheW91dD5cclxuICAgICAgICAgICAgPEhlYWRlcj5cclxuICAgICAgICAgICAgICAgIDxDb250YWluZXIgcmVuZGVyZXI9ezxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWlubmVyXCIvPn0+XHJcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXItbGVmdFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxvZ29cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPEljb24gdHlwZT1cImdpdGh1YlwiIHN0eWxlPXtnaXRodWJJY29uU3R5bGV9Lz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8SW5wdXQuU2VhcmNoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCLmkJzntKLku5PlupNcIlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtzZWFyY2h9XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZVNlYXJjaENoYW5nZX1cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvblNlYXJjaD17aGFuZGxlT25TZWFyY2h9XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1yaWdodFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInVzZXJcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt1c2VyICYmIHVzZXIuaWQgPyAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPERyb3Bkb3duIG92ZXJsYXk9e3VzZXJEcm9wRG93bn0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCIvXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8QXZhdGFyIHNpemU9ezQwfSBzcmM9e3VzZXIuYXZhdGFyX3VybH0vPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9Ecm9wZG93bj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICkgOiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFRvb2x0aXAgdGl0bGU9XCLngrnlh7vov5vooYznmbvlvZVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgey8qIOeCueWHuyBhIOagh+etvu+8jOa1j+iniOWZqOS8muWQkeacjeWKoeWZqOWPkei1t+ivt+axgiovfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPXtgL3ByZXBhcmUtYXV0aD91cmw9JHtyb3V0ZXIuYXNQYXRofWB9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPEF2YXRhciBzaXplPXs0MH0gaWNvbj1cInVzZXJcIi8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L1Rvb2x0aXA+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8L0hlYWRlcj5cclxuICAgICAgICAgICAgPENvbnRlbnQ+XHJcbiAgICAgICAgICAgICAgICA8Q29udGFpbmVyPntjaGlsZHJlbn08L0NvbnRhaW5lcj5cclxuICAgICAgICAgICAgPC9Db250ZW50PlxyXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICAgIC5jb250ZW50IHtcclxuICAgICAgICAgICAgICBjb2xvcjogcmVkO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5oZWFkZXItaW5uZXIge1xyXG4gICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5oZWFkZXItbGVmdCB7XHJcbiAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgICAgICAgI19fbmV4dCB7XHJcbiAgICAgICAgICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5hbnQtbGF5b3V0IHtcclxuICAgICAgICAgICAgICBtaW4taGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5hbnQtbGF5b3V0LWhlYWRlciB7XHJcbiAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAwO1xyXG4gICAgICAgICAgICAgIHBhZGRpbmctcmlnaHQ6IDA7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmFudC1sYXlvdXQtY29udGVudCB7XHJcbiAgICAgICAgICAgICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICAgIDwvTGF5b3V0PlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBjb25uZWN0KFxyXG4gICAgZnVuY3Rpb24gbWFwU3RhdGUoc3RhdGUpIHtcclxuICAgICAgICByZXR1cm4ge1xyXG4gICAgICAgICAgICB1c2VyOiBzdGF0ZS51c2VyLFxyXG4gICAgICAgIH1cclxuICAgIH0sXHJcbiAgICBmdW5jdGlvbiBtYXBSZWR1Y2VyKGRpc3BhdGNoKSB7XHJcbiAgICAgICAgcmV0dXJuIHtcclxuICAgICAgICAgICAgbG9nb3V0OiAoKSA9PiBkaXNwYXRjaChsb2dvdXQoKSksXHJcbiAgICAgICAgfVxyXG4gICAgfSxcclxuKSh3aXRoUm91dGVyKE15TGF5b3V0KSlcclxuIl19 */
+    /*@ sourceURL=F:\React\my-project\react-ssr-with-nextjs-demo\components\Layout.jsx */</style>
+</head>
+<body>
+<div id="__next">
+    <section class="ant-layout">
+        <header class="ant-layout-header">
+            <div class="jsx-267262163 header-inner"
+                 style="width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px">
+                <div class="jsx-267262163 header-left">
+                    <div class="jsx-267262163 logo"><i aria-label="icon: github"
+                                                       style="color:white;font-size:40px;display:block;padding-top:10px;margin-right:20px"
+                                                       tabindex="-1" class="anticon anticon-github">
+                        <svg viewBox="64 64 896 896" focusable="false" class="" data-icon="github" width="1em"
+                             height="1em" fill="currentColor" aria-hidden="true">
+                            <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
+                        </svg>
+                    </i></div>
+                    <div class="jsx-267262163"><span class="ant-input-search ant-input-affix-wrapper"><input type="text"
+                                                                                                             placeholder="搜索仓库"
+                                                                                                             value=""
+                                                                                                             class="ant-input"/><span
+                            class="ant-input-suffix"><i aria-label="icon: search" tabindex="-1"
+                                                        class="anticon anticon-search ant-input-search-icon"><svg
+                            viewBox="64 64 896 896" focusable="false" class="" data-icon="search" width="1em"
+                            height="1em" fill="currentColor" aria-hidden="true"><path
+                            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></i></span></span>
+                    </div>
+                </div>
+                <div class="jsx-267262163 header-right">
+                    <div class="jsx-267262163 user"><a href="/" class="jsx-267262163 ant-dropdown-trigger"><span
+                            style="width:40px;height:40px;line-height:40px;font-size:18px"
+                            class="ant-avatar ant-avatar-circle ant-avatar-image"><img
+                            src="https://avatars1.githubusercontent.com/u/22334496?v=4"/></span></a></div>
+                </div>
+            </div>
+        </header>
+        <main class="ant-layout-content">
+            <div style="width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px">
+                <div class="jsx-22533730 root">
+                    <div class="jsx-22533730 repo-basic">
+                        <div class="jsx-2348854648 root">
+                            <div class="jsx-2348854648 basic-info"><h3 class="jsx-2348854648 repo-title"><a
+                                    class="jsx-2348854648" href="/detail?owner=yjdjiayou&amp;name=easy-react-router">yjdjiayou/easy-react-router</a>
+                            </h3>
+                                <p class="jsx-2348854648 repo-desc">简易版 react 路由实现</p>
+                                <p class="jsx-2348854648 other-info"><span class="jsx-2348854648 last-updated">a month ago</span><span
+                                        class="jsx-2348854648 open-issues">3<!-- --> open issues</span></p></div>
+                            <div class="jsx-2348854648 lang-star"><span
+                                    class="jsx-2348854648 lang">JavaScript</span><span class="jsx-2348854648 stars">0
+                                <!-- --> <i aria-label="icon: star" class="anticon anticon-star"><svg
+                                        viewBox="64 64 896 896" focusable="false" class="" data-icon="star" width="1em"
+                                        height="1em" fill="currentColor" aria-hidden="true"><path
+                                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path></svg></i></span>
+                            </div>
+                        </div>
+                        <div class="jsx-22533730 tabs"><span class="jsx-22533730 tab">Readme</span><a
+                                class="jsx-22533730 tab issues"
+                                href="/detail/issues?owner=yjdjiayou&amp;name=easy-react-router">Issues</a></div>
+                    </div>
+                    <div class="jsx-22533730">
+                        <div class="markdown-body">
+                            <div><p>In the project directory, you can run:</p>
+                                <h3><code>npm start</code></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
+<script src="/_next/static/development/dll/dll_588c54139a783846726e.js?ts=1575213167783"></script>
+<script id="__NEXT_DATA__" type="application/json">{
+    "dataManager": "[]",
+    "props": {
+        "pageProps": {
+            "repoBasic": {
+                "id": 187364690,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxODczNjQ2OTA=",
+                "name": "easy-react-router",
+                "full_name": "yjdjiayou/easy-react-router",
+                "private": false,
+                "owner": {
+                    "login": "yjdjiayou",
+                    "id": 22334496,
+                    "node_id": "MDQ6VXNlcjIyMzM0NDk2",
+                    "avatar_url": "https://avatars1.githubusercontent.com/u/22334496?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/yjdjiayou",
+                    "html_url": "https://github.com/yjdjiayou",
+                    "followers_url": "https://api.github.com/users/yjdjiayou/followers",
+                    "following_url": "https://api.github.com/users/yjdjiayou/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/yjdjiayou/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/yjdjiayou/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/yjdjiayou/subscriptions",
+                    "organizations_url": "https://api.github.com/users/yjdjiayou/orgs",
+                    "repos_url": "https://api.github.com/users/yjdjiayou/repos",
+                    "events_url": "https://api.github.com/users/yjdjiayou/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/yjdjiayou/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/yjdjiayou/easy-react-router",
+                "description": "简易版 react 路由实现",
+                "fork": false,
+                "url": "https://api.github.com/repos/yjdjiayou/easy-react-router",
+                "forks_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/forks",
+                "keys_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/teams",
+                "hooks_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/hooks",
+                "issue_events_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/events",
+                "assignees_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/tags",
+                "blobs_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/languages",
+                "stargazers_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/stargazers",
+                "contributors_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/contributors",
+                "subscribers_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/subscribers",
+                "subscription_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/subscription",
+                "commits_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/merges",
+                "archive_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/downloads",
+                "issues_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/labels{/name}",
+                "releases_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/deployments",
+                "created_at": "2019-05-18T14:00:51Z",
+                "updated_at": "2019-10-17T23:37:28Z",
+                "pushed_at": "2019-10-17T23:38:42Z",
+                "git_url": "git://github.com/yjdjiayou/easy-react-router.git",
+                "ssh_url": "git@github.com:yjdjiayou/easy-react-router.git",
+                "clone_url": "https://github.com/yjdjiayou/easy-react-router.git",
+                "svn_url": "https://github.com/yjdjiayou/easy-react-router",
+                "homepage": null,
+                "size": 714,
+                "stargazers_count": 0,
+                "watchers_count": 0,
+                "language": "JavaScript",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 3,
+                "license": null,
+                "forks": 0,
+                "open_issues": 3,
+                "watchers": 0,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": true,
+                    "push": true,
+                    "pull": true
+                },
+                "network_count": 0,
+                "subscribers_count": 0
+            },
+            "full_name": "yjdjiayou/easy-react-router/readme",
+            "readme": {
+                "name": "README.md",
+                "path": "README.md",
+                "sha": "1f7b0c6ea8eb9b2055417b171fde448c826423b7",
+                "size": 57,
+                "url": "https://api.github.com/repos/yjdjiayou/easy-react-router/contents/README.md?ref=master",
+                "html_url": "https://github.com/yjdjiayou/easy-react-router/blob/master/README.md",
+                "git_url": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/blobs/1f7b0c6ea8eb9b2055417b171fde448c826423b7",
+                "download_url": "https://raw.githubusercontent.com/yjdjiayou/easy-react-router/master/README.md",
+                "type": "file",
+                "content": "CkluIHRoZSBwcm9qZWN0IGRpcmVjdG9yeSwgeW91IGNhbiBydW46CgojIyMg\nYG5wbSBzdGFydGAK\n",
+                "encoding": "base64",
+                "_links": {
+                    "self": "https://api.github.com/repos/yjdjiayou/easy-react-router/contents/README.md?ref=master",
+                    "git": "https://api.github.com/repos/yjdjiayou/easy-react-router/git/blobs/1f7b0c6ea8eb9b2055417b171fde448c826423b7",
+                    "html": "https://github.com/yjdjiayou/easy-react-router/blob/master/README.md"
+                }
+            }
+        },
+        "initialReduxState": {
+            "user": {
+                "login": "yjdjiayou",
+                "id": 22334496,
+                "node_id": "MDQ6VXNlcjIyMzM0NDk2",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/22334496?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/yjdjiayou",
+                "html_url": "https://github.com/yjdjiayou",
+                "followers_url": "https://api.github.com/users/yjdjiayou/followers",
+                "following_url": "https://api.github.com/users/yjdjiayou/following{/other_user}",
+                "gists_url": "https://api.github.com/users/yjdjiayou/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/yjdjiayou/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/yjdjiayou/subscriptions",
+                "organizations_url": "https://api.github.com/users/yjdjiayou/orgs",
+                "repos_url": "https://api.github.com/users/yjdjiayou/repos",
+                "events_url": "https://api.github.com/users/yjdjiayou/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/yjdjiayou/received_events",
+                "type": "User",
+                "site_admin": false,
+                "name": null,
+                "company": null,
+                "blog": "",
+                "location": null,
+                "email": null,
+                "hireable": null,
+                "bio": null,
+                "public_repos": 39,
+                "public_gists": 0,
+                "followers": 6,
+                "following": 16,
+                "created_at": "2016-09-21T01:15:24Z",
+                "updated_at": "2019-11-13T03:37:46Z",
+                "private_gists": 0,
+                "total_private_repos": 0,
+                "owned_private_repos": 0,
+                "disk_usage": 31524,
+                "collaborators": 0,
+                "two_factor_authentication": false,
+                "plan": {
+                    "name": "free",
+                    "space": 976562499,
+                    "collaborators": 0,
+                    "private_repos": 10000
+                }
+            }
+        }
+    },
+    "page": "/detail",
+    "query": {
+        "owner": "yjdjiayou",
+        "name": "easy-react-router"
+    },
+    "buildId": "development",
+    "dynamicBuildId": false,
+    "runtimeConfig": {
+        "GITHUB_OAUTH_URL": "https://github.com/login/oauth/authorize",
+        "OAUTH_URL": "https://github.com/login/oauth/authorize?client_id=ed0029308c5855c19c57\u0026scope=user"
+    },
+    "dynamicIds": [
+        "./node_modules/_antd@3.25.2@antd/dist/antd.css",
+        "./components/MarkdownRenderer.jsx"
+    ]
+}</script>
+<script async="" id="__NEXT_PAGE__/detail" src="/_next/static/development/pages/detail.js?ts=1575213167783"></script>
+<script async="" id="__NEXT_PAGE__/_app" src="/_next/static/development/pages/_app.js?ts=1575213167783"></script>
+<script async="" src="/_next/static/chunks/styles.js?ts=1575213167783"></script>
+<script async="" src="/_next/static/chunks/1.js?ts=1575213167783"></script>
+<script src="/_next/static/runtime/webpack.js?ts=1575213167783" async=""></script>
+<script src="/_next/static/runtime/main.js?ts=1575213167783" async=""></script>
+<script src="/_next/static/chunks/styles.js?ts=1575213167783" async=""></script>
+</body>
+</html>
