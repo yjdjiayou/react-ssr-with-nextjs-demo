@@ -16,7 +16,7 @@
 
 *** 
 
-#### 2、找到 github 上的 [开发者设置] (https://github.com/settings/developers) ，在上面注册自己的 OAuth App
+#### 2、找到 github 上的 [开发者设置](https://github.com/settings/developers) ，在上面注册自己的 OAuth App
 
 * 记录 Client ID 和 Client Secret 到 global.config.js 中
 
