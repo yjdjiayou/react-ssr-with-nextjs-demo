@@ -24,7 +24,7 @@
 
 * Authorization callback URL：后台服务地址 + '/auth'（如：http://localhost:3000/auth）
 
-![图片][https://github.com/yjdjiayou/react-ssr-with-nextjs-demo/blob/master/register-oauth.png]
+![图片](https://github.com/yjdjiayou/react-ssr-with-nextjs-demo/blob/master/register-oauth.png)
 
 *** 
 
