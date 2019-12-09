@@ -18,8 +18,7 @@ const handle = app.getRequestHandler();
 // 创建 Redis client
 // 如果通过这里连接 Redis 时，就不需要再通过命令行连接 Redis
 const redis = new Redis({
-    port: 6379,
-    password: 123456
+    port: 6379
 });
 
 // 因为 Node.js 没有 window 对象，所以无法使用 atob
@@ -36,6 +35,7 @@ app.prepare().then(() => {
 
     const SESSION_CONFIG = {
         key: 'qwer',
+        maxAge: 1000000,
         // 将 Koa 的 session 存储到 Redis 中
         store: new RedisSessionStore(redis),
     };
